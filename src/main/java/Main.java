@@ -6,7 +6,7 @@ public class Main{
             Component water2 = new Component("Water", "H2O", 18.015);
             Component water3 = water1;
 
-            System.out.println(water1 == water2);
+            System.out.println(water1);
             System.out.println(water1.equals(water2));
 
             System.out.println(water1 == water3);

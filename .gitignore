@@ -1,7 +1,7 @@
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
+!**/src/PhysicalPropertiesTest/**/build/
 !**/src/test/**/build/
 .kotlin
 
@@ -14,7 +14,7 @@ build/
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
+!**/src/PhysicalPropertiesTest/**/out/
 !**/src/test/**/out/
 
 ### Eclipse ###
@@ -26,7 +26,7 @@ out/
 .springBeans
 .sts4-cache
 bin/
-!**/src/main/**/bin/
+!**/src/PhysicalPropertiesTest/**/bin/
 !**/src/test/**/bin/
 
 ### NetBeans ###
