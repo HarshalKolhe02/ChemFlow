@@ -1,16 +1,52 @@
+import simualtion.SimulationEngine;
 import stream.Component;
-public class Main{
-    public static void main(String[] args)
-        {
-            Component water1 = new Component("Water", "H2O", 18.015);
-            Component water2 = new Component("Water", "H2O", 18.015);
-            Component water3 = water1;
+import stream.MaterialStream;
+import stream.PhysicalProperties;
+import units.Pump;
 
-            System.out.println(water1);
-            System.out.println(water1.equals(water2));
+public class Main {
+    public static void main(String[] args) {
+        PhysicalProperties properties =
+                new PhysicalProperties(
+                        298.15,
+                        101325,
+                        997,
+                        0.001
+                );
 
-            System.out.println(water1 == water3);
-            System.out.println(water1.equals(water3));
+        MaterialStream inlet =
+                new MaterialStream(
+                        "S101",
+                        "Feed",
+                        100,
+                        properties
+                );
+
+        Component water =
+                new Component(
+                        "Water",
+                        "H2O",
+                        18.015
+                );
+
+        inlet.addComponent(water, 1.0);
+
+        Pump pump =
+                new Pump(
+                        "P101",
+                        "Feed Pump",
+                        500000
+                );
+
+        SimulationEngine engine =
+                new SimulationEngine();
+
+        MaterialStream outlet =
+                engine.run(pump, inlet);
+
+        System.out.println(
+                outlet.getProperties().getPressure()
+        );
 
     }
 }
