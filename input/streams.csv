@@ -1,0 +1,4 @@
+Id,Name,MassFlowRate,Temperature,Pressure,Density,Viscosity
+S101,Feed,100,298.15,101325,997,0.001
+S102,Product,50,310.15,150000,950,0.002
+S103,Coolant,25,290.15,200000,1000,0.0015

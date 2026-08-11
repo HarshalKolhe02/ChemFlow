@@ -1,0 +1,6 @@
+StreamId,Component,MassFraction
+S101,Water,0.7
+S101,Ethanol,0.3
+S102,Water,0.5
+S102,Ethanol,0.5
+S103,Water,1.0
