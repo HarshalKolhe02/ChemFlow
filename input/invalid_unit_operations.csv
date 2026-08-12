@@ -1,0 +1,2 @@
+Type,Id,Name,Inlet,Outlet,Parameter
+COMPRESSOR,C101,Compressor,S101,S102,50000

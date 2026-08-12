@@ -1,4 +1,4 @@
-package simualtion;
+package simulation;
 
 import stream.MaterialStream;
 import units.UnitOpreation;
